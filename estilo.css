@@ -1,0 +1,230 @@
+body {
+
+  color: #333;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: changeBackground 20s infinite;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 50px;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Kanit', sans-serif;
+}
+
+h6 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.molecule {
+  display: inline-block;
+  margin: 20px;
+}
+
+.molecule img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cajit,
+.cajit3 {
+  text-align: right;
+  margin: right;
+}
+
+.cajit2,
+.cajit4 {
+  text-align: left;
+  margin: left;
+}
+
+.molecule img:hover {
+  transform: scale(1.1);
+}
+
+.molecule h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-color: #d3d3d3;
+  }
+
+  25% {
+    background-color: #da9b9b;
+  }
+
+  50% {
+    background-color: #ba61b7;
+  }
+
+  75% {
+    background-color: #666fb7;
+  }
+
+  100% {
+    background-color: #d3d3d3;
+  }
+}
+
+.particle,
+.particle2 {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* Definimos la animación */
+@keyframes moveParticles {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(100vw, 100vh);
+  }
+}
+
+@keyframes movePart {
+  from {
+    transform: translate(100vw, 100vh);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+/* Aplicamos la animación a las partículas */
+.particle {
+  animation: moveParticles 20s linear infinite;
+}
+
+.particle2 {
+  animation: movePart 15s linear infinite;
+}
+
+/* Creamos múltiples partículas con diferentes tamaños y posiciones */
+.particle:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+}
+
+.particle:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  left: 75%;
+}
+
+.particle:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  top: 75%;
+  left: 25%;
+}
+
+.particle:nth-child(4) {
+  width: 10px;
+  height: 10px;
+  top: 100%;
+  left: 0%
+}
+
+.particle:nth-child(5) {
+  width: 10px;
+  height: 10px;
+  top: 125%;
+  left: -25%;
+}
+
+.particle:nth-child(6) {
+  width: 10px;
+  height: 10px;
+  top: 150%;
+  left: -50%;
+}
+
+.particle:nth-child(7) {
+  width: 10px;
+  height: 10px;
+  top: 175%;
+  left: -75%;
+}
+
+.particle2:nth-child(1) {
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+}
+
+.particle2:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  top: 25%;
+  left: 75%;
+}
+
+.particle2:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  top: 75%;
+  left: 25%;
+}
+
+.particle2:nth-child(4) {
+  width: 10px;
+  height: 10px;
+  top: 100%;
+  left: 0%
+}
+
+.particle2:nth-child(5) {
+  width: 10px;
+  height: 10px;
+  top: 125%;
+  left: -25%;
+}
+
+.particle2:nth-child(6) {
+  width: 10px;
+  height: 10px;
+  top: 150%;
+  left: -50%;
+}
+
+.particle2:nth-child(7) {
+  width: 10px;
+  height: 10px;
+  top: 175%;
+  left: -75%;
+}

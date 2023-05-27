@@ -1,0 +1,399 @@
+body {
+
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.imagenes {
+    animation: changeBackground 20s infinite;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-left: 40Vh;
+    margin-right: 40vh;
+}
+
+.link {
+    margin: auto;
+}
+
+.cajita-links,
+.cajita-links2:hover {
+    color: rgb(4, 4, 128);
+    cursor: grab;
+}
+
+
+.nav-link {
+    align-self: right;
+}
+
+.nav-link:hover {
+    background-color: #8e8b8b;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.img-link {
+    width: 50vh;
+    height: 50vh;
+    margin: auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 50px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+.container-fluid {
+    align-items: end;
+    display: inline;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Kanit', sans-serif;
+}
+
+h6 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.molecule {
+    display: inline-block;
+    margin: 20px;
+}
+
+.molecule img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+:root {
+    --width: 100px;
+    --padding: 10px;
+    --background-color: rgb(233, 33, 30);
+    --hover-color: rgb(184, 11, 8);
+    --width-collapsed: 50px;
+    --border-color: black;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+
+}
+
+.body-expanded {
+    margin-left: var(--width);
+}
+
+#sidemenu {
+    background-color: var(--background-color);
+    color: black;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+#sidemenu a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+#sidemenu #header #title {
+
+    overflow: hidden;
+
+}
+
+#sidemenu #header,
+#sidemenu #header #menu-btn {
+    vertical-align: middle;
+}
+
+#sidemenu #header #menu-btn {
+    display: inline-block;
+}
+
+#sidemenu #header #menu-btn {
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+
+#sidemenu #header #menu-btn .btn-hamburguer {
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+#sidemenu #menu-itmes {
+    overflow: hidden;
+}
+
+#sidemenu #menu-itmes:hover {
+    background-color: var(--hover-color);
+    transition: all .3s;
+    transform: scale(.95);
+}
+
+.menu-item {
+    height: 25px;
+    width: 25px;
+    font-family: 'Merienda', cursive;
+}
+
+span {
+    font-size: small;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    size: cover;
+
+}
+
+span {
+    font-family: 'Merienda', cursive;
+}
+
+.card-body,
+.card-text {
+    color: black;
+}
+
+.img-card {
+    width: 45vh;
+    height: 40vh;
+}
+
+#sidemenu #profile #photo img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cajit,
+.cajit3,
+.Caja-teoria {
+    text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.imagenes {
+    width: 100vh;
+    height: 60vh;
+    margin: auto;
+}
+
+.cajit2,
+.cajit4 {
+    text-align: left;
+    margin: left;
+}
+
+.molecule img:hover {
+    transform: scale(1.1);
+}
+
+.molecule h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url(IMAGES/IMG1.jpg);
+    }
+
+    35% {
+        background-image: url(IMAGES/IMG2.jpg);
+    }
+
+    70% {
+        background-image: url(IMAGES/IMG4.jpg);
+    }
+
+    100% {
+        background-image: url(IMAGES/IMG5.jpg);
+    }
+
+
+}
+
+.particle,
+.particle2 {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* Definimos la animación */
+@keyframes moveParticles {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(100vw, 100vh);
+    }
+}
+
+@keyframes movePart {
+    from {
+        transform: translate(100vw, 100vh);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+/* Aplicamos la animación a las partículas */
+.particle {
+    animation: moveParticles 20s linear infinite;
+}
+
+.particle2 {
+    animation: movePart 15s linear infinite;
+}
+
+/* Creamos múltiples partículas con diferentes tamaños y posiciones */
+.particle:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+}
+
+.particle:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    top: 25%;
+    left: 75%;
+}
+
+.particle:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    top: 75%;
+    left: 25%;
+}
+
+.particle:nth-child(4) {
+    width: 10px;
+    height: 10px;
+    top: 100%;
+    left: 0%
+}
+
+.particle:nth-child(5) {
+    width: 10px;
+    height: 10px;
+    top: 125%;
+    left: -25%;
+}
+
+.particle:nth-child(6) {
+    width: 10px;
+    height: 10px;
+    top: 150%;
+    left: -50%;
+}
+
+.particle:nth-child(7) {
+    width: 10px;
+    height: 10px;
+    top: 175%;
+    left: -75%;
+}
+
+.particle2:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+}
+
+.particle2:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    top: 25%;
+    left: 75%;
+}
+
+.particle2:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    top: 75%;
+    left: 25%;
+}
+
+.particle2:nth-child(4) {
+    width: 10px;
+    height: 10px;
+    top: 100%;
+    left: 0%
+}
+
+.particle2:nth-child(5) {
+    width: 10px;
+    height: 10px;
+    top: 125%;
+    left: -25%;
+}
+
+.particle2:nth-child(6) {
+    width: 10px;
+    height: 10px;
+    top: 150%;
+    left: -50%;
+}
+
+.particle2:nth-child(7) {
+    width: 10px;
+    height: 10px;
+    top: 175%;
+    left: -75%;
+}
