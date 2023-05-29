@@ -13,8 +13,8 @@ body {
 
 .imagenes {
     animation: changeBackground 20s infinite;
-
     background-size: cover;
+    margin: auto;
     background-repeat: no-repeat;
 }
 
@@ -244,19 +244,19 @@ span {
 
 @keyframes changeBackground {
     0% {
-        background-image: url(IMAGES/IMG1.jpg);
+        background-image: url(IMAGES/1GC.png);
     }
 
     35% {
-        background-image: url(IMAGES/IMG2.jpg);
+        background-image: url(IMAGES/2GC.png);
     }
 
     70% {
-        background-image: url(IMAGES/IMG4.jpg);
+        background-image: url(IMAGES/3GC.jpg);
     }
 
     100% {
-        background-image: url(IMAGES/IMG5.jpg);
+        background-image: url(IMAGES/CAR.png);
     }
 
 
