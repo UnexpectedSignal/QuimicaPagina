@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <title>La Melatonina- Una guardiana del sueño</title>
+    <style>
+        #particles {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La ciencia de la tecnologia y la quimica fusionadas</title>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +24,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Mela.css">
 
     <script>
         // Ocultar la animación de carga y mostrar el contenido después de 5 segundos
@@ -40,11 +49,6 @@
 </head>
 
 <body>
-
-
-
-
-
     <div id="sidemenu" class="menu-collapsed sticky-left">
         <div id="header">
             <br>
@@ -158,10 +162,6 @@
     </div>
     </div>
 
-
-
-    <h1>La Quimica en nuestro Universo</h1>
-    <br>
     <div class="part">
         <div class="particle"></div>
         <div class="particle"></div>
@@ -181,105 +181,29 @@
 
     </div>
     <script src="script.js"></script>
-    <div class="imagenes">
+    <canvas id="particles"></canvas>
 
-
-
-    </div>
-    <div class="cajit">
-
-        <br>
-        <h6>La química computacional es una rama de la química que utiliza modelos computacionales para ayudar a
-            estudiar y resolver problemas químicos a través de la aplicación de técnicas y simulaciones computacionales
-            de sistemas moleculares. Utiliza teorías, conceptos y modelos de la química teórica, basados en tratamientos
-            físicos de la materia provenientes de la física clásica, cuántica y la mecánica estadística, incorporados en
-            software científico especialmente diseñado para calcular la estructura y/o las propiedades estáticas y
-            dinámicas de moléculas y agregados moleculares en estado gaseoso y en solución y de cuerpos sólidos.
-            Mientras sus resultados complementan la información que puede obtenerse en experimentos químicos, pueden, en
-            otros casos, predecir fenómenos químicos no observados a la fecha.</h6>
-        <br>
-    </div>
-    <hr>
-    <br>
-    <div id="MACROMOLECULAS" class="contenedor">
-        <div class="Caja-links">
-            <a onclick="playSound2()" class="link" href="Macromoleculas.html" target="_blank">
-                <img class="img-link" src="IMAGES/carbohidratos.jpg" alt="Macromoléculas">
-                <h4 class="text-link">Macromoléculas</h4>
-                <script>
-                    function playSound2() {
-                        var audio = new Audio('mario-bros tuberia.mp3');
-                        audio.play();
-                    }
-                </script>
-            </a>
-        </div>
-        <div onclick="playSound2()" ID="PROYECTO" class="Caja-links2" target="_blank">
-            <a class="link" href="#">
-                <img class="img-link" src="" alt="">
-                <h4 class="text-link">Información proyecto</h4>
-                <script>
-                    function playSound2() {
-                        var audio = new Audio('mario-bros tuberia.mp3');
-                        audio.play();
-                    }
-                </script>
-            </a>
-        </div>
-    </div>
-    <br>
-    <hr>
-    <div id="FORMULA" class="Caja-teoria">
-        <h2>¿Ecuación de Schrodinger?</h2>
-        <br>
-        <h6>La famosa ecuación de Schrödinger , desarrollada por el físico austríaco Erwin Schrödinger en 1925, describe
-            la evolución temporal de una partícula subatómica cuántica con masa en el contexto no relativista. Es de
-            importancia central en la teoría de la mecánica cuántica ordinaria, donde representa para las partículas
-            microscópicas un papel análogo a la segunda ley de Newton en la mecánica clásica. Las partículas
-            microscópicas incluyen a las partículas elementales, tales como electrones, así como sistemas de partículas,
-            tales como núcleos atómicos.
-
-            Es muy importante en muchas aplicaciones, aunque en contextos relativistas debe ser reemplazada por el
-            tratamiento de la teoría cuántica de campos, ya que la ecuación de Schrödinger no contempla los procesos de
-            creación de pares o aniquilación de partículas.
-
-        </h6>
-        <img class="ecua" src="IMAGES/Ecuacion.png" alt="ecuación">
-    </div>
-    <hr id="MASTEMAS">
-    <h2>Otros temarios</h2>
-    <br>
-
-    <div class="contenedor">
-        <div class="card" style="width: 18rem;">
-            <img class="img-card" src="IMAGES/QuimicaTe.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Química Teórica</h5>
-                <p class="card-text">La química teórica es un complemento de la química experimental para explicar los
-                    cambios que sufre la materia ante una reacción química. </p>
-                <a href="#" class="btn btn-primary">Saber más</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img class="img-card" src="IMAGES/QuimicaOr.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Química Orgánica</h5>
-                <p class="card-text">La química orgánica es la rama de la química que estudia una clase numerosa de
-                    moléculas que en su gran mayoría contienen carbono.</p>
-                <a href="#" class="btn btn-primary">Saber más</a>
-            </div>
-        </div>
-
-
+    <div id="content">
 
     </div>
-    <audio autoplay src="X2Download.app - Interstellar Main Theme - Hans Zimmer (128 kbps).mp3">
 
-        <source autoplay src="X2Download.app - Interstellar Main Theme - Hans Zimmer (128 kbps).mp3" type="audio/mp3">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js"></script>
+    <script>
+        // Configuración de partículas
+        particlesJS("particles", {
+            // Configuración de partículas personalizada aquí
+        });
+
+        // Inicialización del visualizador J/MOL
+        Jmol.getApplet("jmolApplet", {
+            width: "100%",
+            height: "400px"
+        }, "jmol-container");
+
+        // Cargar archivo químico en el visualizador
+        Jmol.script(jmolApplet, 'load "ruta_del_archivo_quimico.mol"');
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
 
 </html>
