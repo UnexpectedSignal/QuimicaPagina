@@ -162,6 +162,24 @@ h6 {
     color: #333333;
 }
 
+video {
+    width: 120vh;
+    height: 60vh;
+    margin: auto;
+}
+
+.card {
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    height: 60vh;
+    width: 80vh;
+}
+
+cursor {}
+
 /* Animación de rotación */
 @keyframes spin {
     0% {
