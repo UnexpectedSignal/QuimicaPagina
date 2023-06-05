@@ -180,6 +180,11 @@ table {
 
 cursor {}
 
+.imagenM {
+    width: 80vh;
+    height: 50vh    ;
+}
+
 /* Animación de rotación */
 @keyframes spin {
     0% {
