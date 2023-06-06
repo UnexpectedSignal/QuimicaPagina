@@ -45,6 +45,7 @@ body {
     background-repeat: no-repeat;
 }
 
+
 .contenedor {
     display: flex;
     margin: auto;
@@ -182,7 +183,7 @@ cursor {}
 
 .imagenM {
     width: 80vh;
-    height: 50vh    ;
+    height: 50vh;
 }
 
 /* Animación de rotación */
@@ -305,6 +306,13 @@ span {
 .cajit3,
 .Caja-teoria {
     text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+p {
+    text-align: center;
+    font-size: medium;
     margin-left: 10vh;
     margin-right: 10vh;
 }
