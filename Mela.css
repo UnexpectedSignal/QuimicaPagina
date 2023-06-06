@@ -9,7 +9,9 @@ body {
     background-color: rgb(0, 0, 0);
     overflow-y: scroll;
     overflow-x: hidden;
+    cursor: url("https://img.icons8.com/color-glass/48/chemical-test.png"), auto;
 }
+
 
 
 
@@ -179,7 +181,7 @@ table {
     width: 80vh;
 }
 
-cursor {}
+
 
 .imagenM {
     width: 80vh;
