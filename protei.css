@@ -9,7 +9,7 @@ body {
     background-color: rgb(0, 0, 0);
     overflow-y: scroll;
     overflow-x: hidden;
-    cursor: url("https://img.icons8.com/color-glass/48/chemical-test.png"), auto;
+    cursor: url("https://img.icons8.com/3d-fluency/30/cursor.png"), auto;
 }
 
 
@@ -233,24 +233,11 @@ span {
     margin-top: 10px;
 }
 
-@keyframes changeBackground {
-    0% {
-        background-image: url(IMAGES/330px-Aminoacidos-biologia.jpg);
-    }
-
-    35% {
-        background-image: url(IMAGES/PRO2.png);
-    }
-
-    70% {
-        background-image: url(IMAGES/PRO3.jpg);
-    }
-
-    100% {
-        background-image: url(IMAGES/PRO4.png);
-    }
 
 
+.Car-Ima {
+    width: 150vh;
+    height: 60vh;
 }
 
 .particle,
